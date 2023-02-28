@@ -5,6 +5,8 @@
     padding: 30px;
     font-style: italic;
     background-image: url("../images/background.jpg"); /*no-repeat 20 -50;*/
+    background-repeat: no-repeat;
+    background-position: 0px -200px;
     /* opacity: 0.6;
     filter:alpha(opacity=60); */
 }
@@ -36,12 +38,9 @@
 
 /* FOOTER STYLING */
 .footer { 
-    /* position: absolute;  */
-    /* left: 0 ; right: 0; bottom: 0;  */
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding: 20px;
+    height: 70px;
+    margin-top: auto;
     text-align: center;
-    /* align-content: center; */
-    /* height:[footer-height]  */
+    color: white;
+    background-color: #a32727;
 }
