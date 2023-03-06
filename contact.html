@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
         <title>Food Swap | Contact Us</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
 
     <body>
@@ -24,28 +26,65 @@
             <a href="faq.html">FAQ's</a>
         </div>
 
-        <div class="container">
-
+        <div class="content-container">
+            <div class="container">
+                <!-- <div class="row"> -->
+                    <div class="col-1">
+                        <h1 class="left-title">
+                            Fill the form. <br>
+                            It's easy!
+                        </h1>
+    
+                        <form id="contact-form" action="">
+                            <div class="form-row">
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-row">
+                                <!-- <input type="text" id="message" placeholder="Write your message"> -->
+                                <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <input type="submit" id="submit" placeholder="Send Message">
+                            </div>
+                        </form>
+                        <div id="form-message-warning"></div>
+                        <div id="form-message-success">
+                            Your message was sent, thank you!
+                        </div>
+                    </div>
+    
+                    <div class="col-2">
+                        <h2 class="right-title">Contact Us</h2>
+                        <p>
+                            You can Contact Us if you face any problem or is you want more information.
+                        </p>
+                    </div>
+                <!-- </div> -->
+            </div>
+    
+            <div class="footer">
+                <h3>
+                    © Food Swap 2023 - Devnaah & Stef
+                    <br>
+                    <!-- HTML 5 validation -->
+                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
+                        <img  src="images/html5.png" 
+                            alt="Valid HTML 5" 
+                            height="31">
+                    </a>
+    
+                    <!-- CSS validation -->
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
+                        <img height="31"
+                            src="images/css.png"
+                            alt="Valid CSS!">
+                    </a>
+                </h3>
+            </div>
         </div>
-
-        <div class="footer">
-            <h3>
-                © Food Swap 2023 - Devnaah & Stef
-                <br>
-                <!-- HTML 5 validation -->
-                <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
-                    <img  src="images/html5.png" 
-                        alt="Valid HTML 5" 
-                        height="31">
-                </a>
-
-                <!-- CSS validation -->
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
-                    <img height="31"
-                        src="images/css.png"
-                        alt="Valid CSS!">
-                </a>
-            </h3>
-        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

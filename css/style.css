@@ -1,4 +1,26 @@
-/* HEADER STYLING */
+/************** GLOBAL STYLING **********/
+html, body { 
+    min-height:100%;
+}
+
+h1 {
+    border-bottom: #777;
+    padding: 20px 60px;
+    color: #721c1c;
+}
+
+.content-container {
+    position: relative;
+    min-height: 100%;
+}
+
+.container {
+    /* display: block; */
+    padding: 20px;
+    padding-bottom: 75px;
+}
+
+/**************** HEADER STYLING ***************/
 .header {
     text-align: center;
     color: white;
@@ -17,7 +39,7 @@
     /* background-size: 100px; */
 }
 
-/* NAVBAR STYLING */
+/************** NAVBAR STYLING ****************/
 .navbar {
     background-color: #a32727;
     overflow: hidden;
@@ -36,11 +58,149 @@
     background: #721c1c;
 }
 
-/* FOOTER STYLING */
+/************** FOOTER STYLING *********************/
 .footer { 
-    height: 70px;
-    margin-top: auto;
+    height: 70px; /* Height of the footer */
     text-align: center;
     color: white;
     background-color: #a32727;
+    position: fixed;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;  
+    padding-bottom: 5px;
+}
+
+/************** CONTACT US STYLING ********************/
+
+textarea {
+    height: 100px;
+    border: none;
+    /* text-decoration: none; */
+    border-bottom: 2px solid rgb(223, 81, 81);
+    width: 70%;
+    resize: vertical;
+}
+
+.form-row {
+    margin: 10px;
+    padding: 10px;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid rgb(223, 81, 81);
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    display: block;
+    width: 70%;
+    height: 20px;
+}
+
+input[type=submit] {
+    background-color: #a32727;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+  
+input[type=submit]:hover {
+    background-color: #a34141;
+}
+
+.col-1 {
+    float: left;
+    /* display: flex; */
+    width: 60%;
+    padding-right: 5%;
+    /* text-align: center;     */
+    padding-bottom: 75px;
+}
+
+form {
+    border-right: 1px solid #777;
+    padding: 10px;
+}
+
+.col-2 {
+    float: right;
+    /* display: flex; */
+    width: 35%;
+    margin-top: 10%;
+    padding-bottom: 75px;
+}
+
+h2 {
+    border-bottom: #777;
+    padding: 20px 100px;
+    color: #571616;
+}
+
+/* FAQ's STYLING */
+/* .faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+    color: #721c1c;
+} */
+
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    background-color: #e49292;
+    color: #a11111;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body{
+    margin: auto;
+    text-align: center;
+    width: 50%; 
+    padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #f7e2e2;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: #f1c5c5;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
