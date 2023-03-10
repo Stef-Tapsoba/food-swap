@@ -6,6 +6,7 @@
         <title>Food Swap | Contact Us</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
 
     <body>
@@ -34,26 +35,28 @@
                             Fill the form. <br>
                             It's easy!
                         </h1>
+
+                        <div id="form-message-success">
+                            Your message was sent, thank you!
+                        </div>
     
                         <form id="contact-form" action="">
                             <div class="form-row">
-                                <input type="text" id="name" placeholder="Name">
+                                <input type="text" id="name" placeholder="Name" required>
                             </div>
                             <div class="form-row">
-                                <input type="text" id="email" placeholder="Email">
+                                <input type="text" id="email" placeholder="Email" required>
                             </div>
                             <div class="form-row">
                                 <!-- <input type="text" id="message" placeholder="Write your message"> -->
-                                <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
                             </div>
                             <div class="form-row">
                                 <input type="submit" id="submit" placeholder="Send Message">
                             </div>
                         </form>
-                        <div id="form-message-warning"></div>
-                        <div id="form-message-success">
-                            Your message was sent, thank you!
-                        </div>
+                        <!-- <div id="form-message-warning"></div> -->
+                        
                     </div>
     
                     <div class="col-2">
@@ -65,26 +68,28 @@
                 <!-- </div> -->
             </div>
     
-            <div class="footer">
+            <!-- <div class="footer">
                 <h3>
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
-                    <!-- HTML 5 validation -->
+                    <-- HTML 5 validation --
                     <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
-                    <!-- CSS validation -->
+                    <-- CSS validation --
                     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/contact.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
                     </a>
                 </h3>
-            </div>
+            </div> -->
         </div>
-        <script src="js/main.js"></script>
+        <script>
+            contactUs();
+        </script>
     </body>
 </html>

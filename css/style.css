@@ -139,7 +139,13 @@ h2 {
     color: #571616;
 }
 
-/* FAQ's STYLING */
+#form-message-success {
+    display: none;
+    color: red;
+}
+
+
+/************** FAQ's STYLING ********************/
 /* .faq-heading{
     border-bottom: #777;
     padding: 20px 60px;
@@ -203,4 +209,62 @@ h2 {
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+}
+
+
+/************** BLOG PAGE STYLING ********************/
+.card {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#try {
+    color: rgb(58, 113, 150);
+}
+
+.post {
+    background-color: #f7e2e2;
+    border-radius: 5px;
+    /* box-shadow: 0 0 0 1px #5e5c5c; */
+    padding: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+
+.blog-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit {
+    font-size: small;
+    color: #777;
+    text-decoration: none;
+    text-align: center;
+}
+
+.title,
+.author {
+    font-family: sans-serif;
+}
+
+.title {
+    float: left;
+    margin-bottom: 0;
+}
+
+.author {
+    float: right;
+    color: #777;
+    font-size: bold;
+    margin-top: 30px;
+}
+
+.post-content {
+    margin-top: 90px;
+    font-family: sans-serif;
 }
