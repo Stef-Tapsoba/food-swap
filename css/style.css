@@ -3,10 +3,13 @@ html, body {
     min-height:100%;
 }
 
-h1 {
-    border-bottom: #777;
-    padding: 20px 60px;
-    color: #721c1c;
+h1,
+h2 {
+    color: #571616;
+}
+
+.website-title {
+    color: white;
 }
 
 .content-container {
@@ -54,6 +57,7 @@ h1 {
     text-decoration: none;
 }
 
+.active-link,
 .navbar a:hover {
     background: #721c1c;
 }
@@ -104,7 +108,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: center;
+    /* float: center; */
 }
   
 input[type=submit]:hover {
@@ -133,10 +137,13 @@ form {
     padding-bottom: 75px;
 }
 
-h2 {
-    border-bottom: #777;
+.left-title {
+    padding: 20px 30px;
+}
+
+.right-title {
+    /* border-bottom: #777; */
     padding: 20px 100px;
-    color: #571616;
 }
 
 #form-message-success {
@@ -176,13 +183,6 @@ h2 {
     margin: auto;
 }
 
-.faq-body{
-    margin: auto;
-    text-align: center;
-    width: 50%; 
-    padding: auto;
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
@@ -191,6 +191,9 @@ h2 {
 
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
+    width: 50%; 
+    margin: auto;
+    text-align: center;
     padding: 0 18px;
     background-color: #f1c5c5;
     display: none;
@@ -260,7 +263,7 @@ h2 {
 .author {
     float: right;
     color: #777;
-    font-size: bold;
+    font-weight: bold;
     margin-top: 30px;
 }
 

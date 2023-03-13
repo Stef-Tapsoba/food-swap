@@ -11,27 +11,51 @@
 
     <body>
         <div class="header">
-            <h1>Food Swap</h1>
+            <h1 class="website-title">Food Swap</h1>
             <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
         </div>
 
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="swap.html">Swap</a>
-            <a href="members.html">Members</a>
-            <a href="forum.html">Forum</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ's</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="swap.html">Swap</a>
+            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link" href="forum.html">Forum</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="resources.html">Resources</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="faq.html">FAQ's</a>
         </div>
 
 
         <div class="content-container">
             <div class="container">
-                <p>Discussion forum of members (like Discussion board)</p>
-                <p>contact info</p>
+                <h2>Discussion Forum</h2>
+                <form id="post-form">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" name="post-title"><br>
+                    <label for="post-message">Message:</label>
+                    <textarea id="post-message" name="post-message"></textarea><br>
+                    <input type="submit" value="Post">
+                </form>
+                <hr>
+                <div id="post-list">
+                    <div class="post">
+                        <h3 class="post-title">Looking for fresh eggs</h3>
+                        <p class="post-author">Posted by Sarah on March 10, 2023</p>
+                        <p class="post-message">I'm interested in swapping for fresh eggs from someone in the area. 
+                            Let me know if you have any available!
+                        </p>
+                    </div>
+                    
+                    <div class="post">
+                        <h3 class="post-title">Trade for homemade jam</h3>
+                        <p class="post-author">Posted by Alex on March 11, 2023</p>
+                        <p class="post-message">I have some homemade peach jam that I'd love to trade for some fresh 
+                            produce. Anyone interested?
+                        </p>
+                    </div>
+                </div>
             </div>
     
             <div class="footer">
@@ -39,14 +63,14 @@
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
                     <!-- HTML 5 validation -->
-                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/forum.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
                     <!-- CSS validation -->
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/forum.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
@@ -54,6 +78,10 @@
                 </h3>
             </div>
         </div>
+
+        <script>
+            setNavigation();
+        </script>
         
     </body>
 </html>

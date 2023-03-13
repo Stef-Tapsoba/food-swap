@@ -1,3 +1,22 @@
+// JS FOR NAVIGATION BAR
+setNavigation = () => {
+    // var navbar = document.getElementsByTagName("nav")[0];
+
+    // Get all links with class="nav-link" inside navbar
+    var navlinks = document.getElementsByClassName("nav-link");
+
+    // Loop through the links and add the active class to the current/clicked link
+    for (var i = 0; i < navlinks.length; i++) {
+        navlinks[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active-link");
+        current[0].className = current[0].className.replace(" active-link", "");
+        this.className += " active-link";
+        console.log("selected: " + navlinks[i]);
+    });
+    }
+}
+
+
 // JS FOR CONTACT US Page
 contactUs =()=> {
     var form = document.getElementsByTagName("form")[0];

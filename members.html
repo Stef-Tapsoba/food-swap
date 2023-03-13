@@ -11,32 +11,80 @@
 
     <body>
         <div class="header">
-            <h1>Food Swap</h1>
+            <h1 class="website-title">Food Swap</h1>
             <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
         </div>
 
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="swap.html">Swap</a>
-            <a href="members.html">Members</a>
-            <a href="forum.html">Forum</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ's</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="swap.html">Swap</a>
+            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link" href="forum.html">Forum</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="resources.html">Resources</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="faq.html">FAQ's</a>
         </div>
 
 
         <div class="content-container">
             <div class="container">
-                <p>Members profiles</p>
-                <p>search bar to find members located in the area
-                    <br>
-                    search by Name
-                </p>
-                <p>Members statistics in the community</p>
-                <p>contact info</p>
+                <h2>Members</h2>
+                <form>
+                    <label for="location">Find members located in:</label>
+                    <input type="text" id="location" name="location">
+                    <button type="submit">Search</button>
+                </form>
+                
+                <form>
+                    <label for="name">Search by name:</label>
+                    <input type="text" id="name" name="name">
+                    <button type="submit">Search</button>
+                </form>
+                
+                <h3>Member Statistics</h3>
+                <ul>
+                    <li>Total members: 500</li>
+                    <li>Members in your area: 50</li>
+                    <!-- <li>Most active members:</li>
+                    <ul>
+                        <li>Jane Doe (100 swaps)</li>
+                        <li>John Smith (75 swaps)</li>
+                        <li>Sara Lee (50 swaps)</li>
+                    </ul> -->
+                </ul>
+                <!-- <p>Most active members:</p>
+                <ul>
+                    <li>Jane Doe (100 swaps)</li>
+                    <li>John Smith (75 swaps)</li>
+                    <li>Sara Lee (50 swaps)</li>
+                </ul> -->
+                
+                <h3>Member Profiles</h3>
+                <ul>
+                    <li>
+                        <h4>Jane Doe</h4>
+                        <p>Location: Philadelphia, PA</p>
+                        <p>Interests: Baking, preserving, gardening</p>
+                        <p>Swaps completed: 100</p>
+                        <p>Contact: janedoe@email.com</p>
+                    </li>
+                    <li>
+                        <h4>John Smith</h4>
+                        <p>Location: New York, NY</p>
+                        <p>Interests: Brewing, pickling, cheese-making</p>
+                        <p>Swaps completed: 75</p>
+                        <p>Contact: johnsmith@email.com</p>
+                    </li>
+                    <li>
+                        <h4>Sara Lee</h4>
+                        <p>Location: Chicago, IL</p>
+                        <p>Interests: Canning, fermenting, herb-gardening</p>
+                        <p>Swaps completed: 50</p>
+                        <p>Contact: saralee@email.com</p>
+                    </li>
+                </ul>
             </div>
     
             <div class="footer">
@@ -44,14 +92,14 @@
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
                     <!-- HTML 5 validation -->
-                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/members.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
                     <!-- CSS validation -->
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/members.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
@@ -59,6 +107,8 @@
                 </h3>
             </div>
         </div>
-
+        <script>
+            setNavigation();
+        </script>
     </body>
 </html>

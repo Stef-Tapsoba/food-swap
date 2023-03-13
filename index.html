@@ -11,35 +11,103 @@
 
     <body>
         <div class="header">
-            <h1>Food Swap</h1>
+            <h1 class="website-title">Food Swap</h1>
             <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
         </div>
 
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="swap.html">Swap</a>
-            <a href="members.html">Members</a>
-            <a href="forum.html">Forum</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ's</a>
-        </div>
+        <nav class="navbar">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="swap.html">Swap</a>
+            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link" href="forum.html">Forum</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="resources.html">Resources</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="faq.html">FAQ's</a>
+        </nav>
 
 
         <div class="content-container">
             <div class="container">
-                <p>Welcome paragraph</p>
-                <p>Mission Statement</p>
-                <p>Key features of the website (ex: Forum, Blog, Events, Members profile)</p>
-                <p>Outline of the benefits of becoming a member</p>
-                <p>membership benefits</p>
-                <p>Call to action to join the community (links to registration page)</p>
-                <p>Testimonies</p>
-                <p>Community guidelines</p>
-                <p>Contact info</p>
+                <h2>Welcome to Food Swap</h2>
+                <p>Looking to diversify your pantry and try new foods? Food Swap is a community of food enthusiasts 
+                    who are passionate about exploring new flavors and ingredients.
+                </p>
+                <p>Our mission is to connect people who love food and empower them to trade their way to a more delicious 
+                    pantry. Whether you're a home cook, a seasoned chef, or just starting to experiment with new recipes, 
+                    you'll find plenty of opportunities to discover new ingredients, share your own creations, and connect 
+                    with like-minded food lovers.
+                </p>
                 
+                <h3>Key Features</h3>
+                <ul>
+                    <li>
+                        <strong>Forum:</strong> 
+                        Join the conversation with our active community of food lovers. Share recipes, ask for advice, 
+                        and connect with other members who share your passion for cooking.
+                    </li>
+                    <li>
+                        <strong>Blog:</strong> 
+                        Get inspired with our weekly blog posts, featuring recipes, cooking tips, and stories from our 
+                        community.
+                    </li>
+                    <li>
+                        <strong>Events:</strong> 
+                        Join us for monthly food swaps, cooking classes, and other events in your area.
+                    </li>
+                    <li>
+                        <strong>Members Profile:</strong> 
+                        Create a profile to share your favorite recipes, cooking tips, and more with other members.
+                    </li>
+                </ul>
+                
+                <h3>Membership Benefits</h3>
+                <ul>
+                    <li>
+                        <strong>Access to exclusive events:</strong> 
+                        Members get first dibs on tickets to our popular food swaps and other events.
+                    </li>
+                    <li>
+                        <strong>Discounts on cooking classes:</strong> 
+                        Get discounted rates on cooking classes and other food-related events.
+                    </li>
+                    <li>
+                        <strong>Connect with like-minded foodies:</strong> 
+                        Join a community of passionate food lovers who share your enthusiasm for cooking and trying new 
+                        flavors.
+                    </li>
+                    <li>
+                        <strong>Discover new ingredients:</strong> 
+                        Trade your way to a more diverse pantry with our food swaps and other community events.
+                    </li>
+                </ul>
+                <a href="register.html" class="button">
+                    Join Now
+                </a>
+                
+                <h3>Testimonials</h3>
+                <blockquote>"Food Swap has been a game changer for me. I've discovered so many new ingredients and flavors, 
+                    and I've made some great friends along the way!" - Sarah, San Francisco
+                </blockquote>
+                <blockquote>"I love being part of the Food Swap community. It's a great way to connect with other food 
+                    lovers and try new things." - Michael, New York
+                </blockquote>
+                
+                <h3>Community Guidelines</h3>
+                <ul>
+                    <li>Be respectful and inclusive of all members.</li>
+                    <li>Do not share copyrighted material or spam the community.</li>
+                    <li>Be open to trying new things and sharing your own creations.</li>
+                </ul>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or feedback, please don't hesitate to get in touch!</p>
+                <ul>
+                    <li>Email: info@foodswap.com</li>
+                    <li>Phone: 555-555-5555</li>
+                    <li>Address: 123 Main St, Anytown USA</li>
+                </ul>
             </div>
     
             <div class="footer">
@@ -47,14 +115,14 @@
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
                     <!-- HTML 5 validation -->
-                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/index.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
                     <!-- CSS validation -->
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/index.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
@@ -62,6 +130,8 @@
                 </h3>
             </div>
         </div>
-        
+        <script>
+            setNavigation();
+        </script>
     </body>
 </html>

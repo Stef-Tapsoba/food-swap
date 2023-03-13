@@ -11,24 +11,24 @@
 
     <body>
         <div class="header">
-            <h1>Food Swap</h1>
+            <h1 class="website-title">Food Swap</h1>
             <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
         </div>
 
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="swap.html">Swap</a>
-            <a href="members.html">Members</a>
-            <a href="forum.html">Forum</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ's</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="swap.html">Swap</a>
+            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link" href="forum.html">Forum</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="resources.html">Resources</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="faq.html">FAQ's</a>
         </div>
 
         <div class="content-container">
-            <div class="blog-container">
+            <div class="container">
                 <p>Members can post their experiences</p>
                 <p id="try">Good to know information about produce</p>
                 <h1>Blog</h1>
@@ -58,6 +58,10 @@
                             <h5 class="author">By: Abel Weekend, 02/07/2023</h5>
                         </div>
                         <div class="post-content">
+                            <div class="image-div">
+                                <img class="blog-image" src="images/marios_market_banner.jpg" alt=""> <br>
+                                <a class="credit" href="https://giving.drexel.edu/stories/mario_market/">Mario’s Market Food Pantry</a>
+                            </div>
                             <p>
                                 I wanted to preface this by saying that I am so glad Food Swap exists. I'm a Drexel student and I find that Mario's Market seriously lacks
                                 in diversity food wise. When a friend told me about this website I was like "this is it!". Can't even remember the last time
@@ -96,26 +100,28 @@
     
             </div>
     
-            <!-- <div class="footer">
+            <div class="footer">
                 <h3>
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
-                    <-- HTML 5 validation --
+                    <!-- HTML 5 validation -->
                     <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/blog.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
-                    <-- CSS validation --
+                    <!-- CSS validation -->
                     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/blog.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
                     </a>
                 </h3>
-            </div> -->
+            </div>
         </div>
-        
+        <script>
+            setNavigation();
+        </script>
     </body>
 </html>

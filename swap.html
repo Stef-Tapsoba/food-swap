@@ -11,48 +11,66 @@
 
     <body>
         <div class="header">
-            <h1>Food Swap</h1>
+            <h1 class="website-title">Food Swap</h1>
             <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
         </div>
 
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="swap.html">Swap</a>
-            <a href="members.html">Members</a>
-            <a href="forum.html">Forum</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ's</a>
-        </div>
+        <nav class="navbar">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="swap.html">Swap</a>
+            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link" href="forum.html">Forum</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="resources.html">Resources</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="faq.html">FAQ's</a>
+        </nav>
 
 
         <div class="content-container">
             <div class="container">
-                <p>List of upcoming events
-                    <br>
-                    Location, date and time
+                <h2>Food Swap</h2>
+                <p>Food swaps are a great way to trade excess produce and other food items with others in your community. 
+                    Whether you have an abundance of homegrown vegetables, homemade jams and jellies, or other tasty 
+                    treats, a food swap is the perfect place to exchange your goods with other food enthusiasts.
                 </p>
-
-                <p>Swapping locations around University City</p>
-                <p>Contact info</p>
-
+                
+                <h3>Upcoming Food Swaps</h3>
+                <ul>
+                    <li>
+                        <strong>Location:</strong> 
+                        University City Farmers Market
+                    </li>
+                    <li>
+                        <strong>Date:</strong> 
+                        Saturday, March 25, 2023
+                    </li>
+                    <li>
+                        <strong>Time:</strong> 
+                        10am - 12pm
+                    </li>
+                </ul>
+                
+                <p>If you're interested in attending a food swap, simply show up with your items and a willingness to 
+                    trade. You'll have the opportunity to meet other food enthusiasts, share your creations, and bring 
+                    home some delicious new treats!
+                </p>
             </div>
-    
+
             <div class="footer">
                 <h3>
                     © Food Swap 2023 - Devnaah & Stef
                     <br>
                     <!-- HTML 5 validation -->
-                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/swap.html">
                         <img  src="images/html5.png" 
                             alt="Valid HTML 5" 
                             height="31">
                     </a>
     
                     <!-- CSS validation -->
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/swap.html">
                         <img height="31"
                             src="images/css.png"
                             alt="Valid CSS!">
@@ -60,6 +78,8 @@
                 </h3>
             </div>
         </div>
-   
+        <script>
+            setNavigation();
+        </script>
     </body>
 </html>
