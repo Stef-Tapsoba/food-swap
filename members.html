@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Food Swap | Members</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -11,21 +13,22 @@
 
     <body>
         <div class="header">
+            <img class="logo" src="images/food-swap-logo.png" alt="food swap logo">
             <h1 class="website-title">Food Swap</h1>
-            <p id="slogan">"Trade your way to a more delicious pantry with out network of food exchangers"</p>
+            <p id="slogan">"Trade your way to a more delicious pantry with our network of food exchangers"</p>
         </div>
 
-        <div class="navbar">
+        <nav class="navbar">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="swap.html">Swap</a>
-            <a class="nav-link" href="members.html">Members</a>
+            <a class="nav-link active-link" href="members.html">Members</a>
             <a class="nav-link" href="forum.html">Forum</a>
             <a class="nav-link" href="blog.html">Blog</a>
             <a class="nav-link" href="resources.html">Resources</a>
             <a class="nav-link" href="contact.html">Contact Us</a>
             <a class="nav-link" href="faq.html">FAQ's</a>
-        </div>
+        </nav>
 
 
         <div class="content-container">
@@ -47,37 +50,25 @@
                 <ul>
                     <li>Total members: 500</li>
                     <li>Members in your area: 50</li>
-                    <!-- <li>Most active members:</li>
-                    <ul>
-                        <li>Jane Doe (100 swaps)</li>
-                        <li>John Smith (75 swaps)</li>
-                        <li>Sara Lee (50 swaps)</li>
-                    </ul> -->
                 </ul>
-                <!-- <p>Most active members:</p>
-                <ul>
-                    <li>Jane Doe (100 swaps)</li>
-                    <li>John Smith (75 swaps)</li>
-                    <li>Sara Lee (50 swaps)</li>
-                </ul> -->
                 
                 <h3>Member Profiles</h3>
-                <ul>
-                    <li>
+                <ul class="members-profile">
+                    <li class="card">
                         <h4>Jane Doe</h4>
                         <p>Location: Philadelphia, PA</p>
                         <p>Interests: Baking, preserving, gardening</p>
                         <p>Swaps completed: 100</p>
                         <p>Contact: janedoe@email.com</p>
                     </li>
-                    <li>
+                    <li class="card">
                         <h4>John Smith</h4>
                         <p>Location: New York, NY</p>
                         <p>Interests: Brewing, pickling, cheese-making</p>
                         <p>Swaps completed: 75</p>
                         <p>Contact: johnsmith@email.com</p>
                     </li>
-                    <li>
+                    <li class="card">
                         <h4>Sara Lee</h4>
                         <p>Location: Chicago, IL</p>
                         <p>Interests: Canning, fermenting, herb-gardening</p>
@@ -107,8 +98,5 @@
                 </h3>
             </div>
         </div>
-        <script>
-            setNavigation();
-        </script>
     </body>
 </html>

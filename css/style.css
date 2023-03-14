@@ -2,14 +2,82 @@
 html, body { 
     min-height:100%;
 }
-
-h1,
-h2 {
-    color: #571616;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
-.website-title {
-    color: white;
+.logo {
+    width: 85px;
+    height: 80px;
+}
+
+h1,
+h2,
+h3 {
+    color: #571616;
+}
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+p {
+    padding-left: 30px;
+}
+
+#homepage-img {
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    display: block
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    /* list-style: none; */
+}
+
+ul.members-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style:none;
+}
+  
+li.card {
+    flex: 0 0 calc(33% - 50px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    li.card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #333;
+    padding-left: 10px;
 }
 
 .content-container {
@@ -18,34 +86,96 @@ h2 {
 }
 
 .container {
+    margin: 0 auto;
     /* display: block; */
     padding: 20px;
     padding-bottom: 75px;
 }
 
+
+/* BUTTONS STYLING */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a32727;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: #a34141;
+}
+
+button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #a32727;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #a34141;
+}
+
+/* Card container */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Card title */
+.card h4 {
+    margin-top: 0;
+}
+
+/* Card text */
+.card p {
+    margin-bottom: 10px;
+}
+
+/* Card hover effect */
+.card:hover {
+    border-color: #555;
+}
+
+
 /**************** HEADER STYLING ***************/
 .header {
     text-align: center;
-    color: white;
+    color: #a32727;
     padding: 30px;
     font-style: italic;
-    background-image: url("../images/background.jpg"); /*no-repeat 20 -50;*/
-    background-repeat: no-repeat;
-    background-position: 0px -200px;
-    /* opacity: 0.6;
-    filter:alpha(opacity=60); */
 }
 
 .header h1 {
     font-size: 48px;
-    /* background-color: #a32727; */
-    /* background-size: 100px; */
+    color: #a32727;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+#slogan {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 18px;
 }
 
 /************** NAVBAR STYLING ****************/
 .navbar {
     background-color: #a32727;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .navbar a {
@@ -57,22 +187,23 @@ h2 {
     text-decoration: none;
 }
 
-.active-link,
+.navbar .active-link,
 .navbar a:hover {
     background: #721c1c;
 }
 
 /************** FOOTER STYLING *********************/
 .footer { 
-    height: 70px; /* Height of the footer */
+    /* height: 70px; */
     text-align: center;
     color: white;
     background-color: #a32727;
-    position: fixed;
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;  
-    padding-bottom: 5px;
+    margin-top: 5px; 
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 /************** CONTACT US STYLING ********************/
@@ -116,34 +247,17 @@ input[type=submit]:hover {
 }
 
 .col-1 {
-    float: left;
-    /* display: flex; */
-    width: 60%;
+    width: 65%;
     padding-right: 5%;
-    /* text-align: center;     */
-    padding-bottom: 75px;
 }
 
 form {
-    border-right: 1px solid #777;
+    /* border-right: 1px solid #777; */
     padding: 10px;
-}
-
-.col-2 {
-    float: right;
-    /* display: flex; */
-    width: 35%;
-    margin-top: 10%;
-    padding-bottom: 75px;
 }
 
 .left-title {
     padding: 20px 30px;
-}
-
-.right-title {
-    /* border-bottom: #777; */
-    padding: 20px 100px;
 }
 
 #form-message-success {
@@ -216,29 +330,29 @@ form {
 
 
 /************** BLOG PAGE STYLING ********************/
-.card {
+.blog-card {
     padding: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f7e2e2;
+    border-radius: 5px;
+    border: none;
+}
+.blog-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 #try {
     color: rgb(58, 113, 150);
 }
 
-.post {
-    background-color: #f7e2e2;
-    border-radius: 5px;
-    /* box-shadow: 0 0 0 1px #5e5c5c; */
-    padding: 20px;
-    margin-bottom: 10px;
-    border: none;
-}
-
-
 .blog-image {
     width: 50%;
     height: auto;
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -261,13 +375,9 @@ form {
 }
 
 .author {
-    float: right;
+    /* float: right; */
     color: #777;
     font-weight: bold;
     margin-top: 30px;
-}
-
-.post-content {
-    margin-top: 90px;
-    font-family: sans-serif;
+    padding-top: 30px;
 }
