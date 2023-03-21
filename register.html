@@ -35,8 +35,50 @@
 
 
         <div class="content-container">
-            <div class="container">
+            <div class="register-container">
 
+                <!-- slider to select the login or signup form -->
+                <div class="slider"></div>
+                <div class="btn">
+                    <button class="login">Log In</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+
+                <div class="form-section">
+                    <!-- login form -->
+                    <div class="login-form">
+                        <form>
+                            <label>Email: </label>
+                            <input type="text"> <br>
+                            <label>Password: </label>
+                            <input type="password"> <br>
+                        </form>
+                        <a href="index.html" class="button" id="login-btn">
+                            Log In
+                        </a>
+                    </div>
+
+                    <!-- Registration form -->
+                    <div class="registration-form">
+                        <form>
+                            <label>First Name: </label>
+                            <input type="text"> <br>
+                            <label>Last Name: </label>
+                            <input type="text"> <br>
+                            <label>Email: </label>
+                            <input type="email"> <br>
+                            <label>Password: </label>
+                            <input type="password"> <br>
+                            <label>Confirm Password: </label>
+                            <input type="password"> <br>
+    
+                            <!-- <input onclick="window.location('index.html');" class="button" type="submit" value="Register"> -->
+                        </form>
+                        <a href="register.html" class="button" id="signup-btn">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
             </div>
     
             <div class="footer">
@@ -49,14 +91,14 @@
                 <a class="footer-link" href="contact.html">Contact Us</a> <br>
 
                 <!-- HTML 5 validation -->
-                <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                <a href="https://validator.w3.org/nu/?doc=https://www.cs.drexel.edu/~set89/food-swap/register.html">
                     <img  src="images/html5.png" 
                         alt="Valid HTML 5" 
                         height="34">
                 </a>
 
                 <!-- CSS validation -->
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/base.html">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://www.cs.drexel.edu/~set89/food-swap/register.html">
                     <img height="31"
                         src="images/css.png"
                         alt="Valid CSS!">
@@ -64,5 +106,8 @@
             
             </div>
         </div>
+        <script>
+            registration();
+        </script>
     </body>
 </html>

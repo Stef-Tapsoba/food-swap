@@ -10,6 +10,10 @@ body {
     color: #333;
 }
 
+a.feature {
+    color: #333;
+}
+
 .logo {
     width: 85px;
     height: 80px;
@@ -87,13 +91,90 @@ blockquote {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
     /* display: block; */
     padding: 20px;
     padding-bottom: 75px;
 }
 
+input#submit-search,
+input#submit-post {
+    margin-left: -20px;
+}
+/************** REGISTRATION PAGE STYLING ********************/
+.register-container {
+    height: 600px;
+    width: 500px;
+    position: relative;
+    left: 25%;
+    overflow: hidden;
+}
 
+.btn {
+    height: 50px;
+    width: 250px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 30px rgb(254, 215, 188);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login,
+.signup {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider {
+    height: 50px;
+    width: 125px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #f39e9e, #ce6868);
+    position: absolute;
+    top: 20px;
+    left: 125px;
+    transition: all 0.5s ease-in-out;
+}
+ 
+.moveslider {
+    left: 250px;
+}
+
+.form-section {
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+}
+ 
+.form-section-move {
+    left: -500px;
+}
+
+a#login-btn,
+a#signup-btn {
+    margin-left: -80px;
+}
+
+.login-form,
+.registration-form {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+ 
 /* BUTTONS STYLING */
 .button {
     display: inline-block;
@@ -207,6 +288,21 @@ button[type="submit"]:hover {
     text-decoration: none;
 }
 
+.footer-title,
+a.footer-link {
+    color: white;
+}
+
+.small {
+    margin-top:-20px;
+    font-size: small;
+}
+
+a.footer-link {
+    text-decoration: underline;
+    padding-left: 50px;
+}
+
 /************** CONTACT US STYLING ********************/
 
 textarea {
@@ -222,7 +318,9 @@ textarea {
     margin: 10px;
     padding: 10px;
 }
-input[type=text] {
+input[type=text],
+input[type=email], 
+input[type=password] {
     border: none;
     border-bottom: 2px solid rgb(223, 81, 81);
     padding-left: 0;
@@ -261,55 +359,34 @@ form {
     padding: 20px 30px;
 }
 
-#form-message-success {
-    display: none;
-    color: red;
-}
-
-
 /************** FAQ's STYLING ********************/
-/* .faq-heading{
-    border-bottom: #777;
-    padding: 20px 60px;
-    color: #721c1c;
-} */
-
 .faq-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.hr-line{
-  width: 60%;
-  margin: auto;
-  
-}
-/* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
     background-color: #e49292;
     color: #a11111;
     cursor: pointer;
     padding: 30px 20px;
-    width: 60%;
+    width: 70%;
     border: none;
     outline: none;
     transition: 0.4s;
     margin: auto;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
     background-color: #f7e2e2;
 }
 
-/* Style the faq-page panel. Note: hidden by default */
 .faq-body {
-    width: 50%; 
+    width: 70%; 
     margin: auto;
     text-align: center;
-    padding: 0 18px;
     background-color: #f1c5c5;
     display: none;
     overflow: hidden;
@@ -317,7 +394,7 @@ form {
 
 .faq-page:after {
     content: '\02795';
-    /* Unicode character for "plus" sign (+) */
+    /* Unicode character for "+" sign */
     font-size: 13px;
     color: #777;
     float: right;
@@ -326,7 +403,7 @@ form {
 
 .active:after {
     content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+    /* Unicode character for "-" sign */
 }
 
 
@@ -414,7 +491,6 @@ body {
 /* Responsive design for tablets and larger screens */
 @media screen and (min-width: 768px) {
     .header {
-        flex-direction: row;
         justify-content: space-between;
     }
 
